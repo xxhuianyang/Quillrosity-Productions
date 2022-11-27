@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>Quillrosity Productions Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="quillrosity.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    </head>
+
+    <body>
+        <header>
+            <div id="logo">
+                <a href="#logo" class="logo"><img src="images/quillrosity.png"></a>
+            </div>
+            <ul>
+                <li><a href="#logo">Home</a></li>
+                <li><a href="#sec">About Us</a></li>
+                <li><a href="#waves">Contact</a></li>
+
+            </ul>
+        </header>
+        <section>
+            <img src="images/Overlay(Bottom).png" id="bg">
+            <img src="images/Overlay(Floor).png" id="floor">
+            <img src="images/Overlay(Top).png" id="feathers">
+            <img src="images/Overlay(Sparkles).png" id="sparkles">
+            <h2 id="text">"Knowledge is Free <br> and Stay Curious."</h2>
+            <a href="#sec" id="btn">Explore</a>
+            <img src="images/Overlay(Middle-chan).png" id="books"> 
+        </section>
+       
+        <div class="animation-area">
+            <ul class="box-area">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    
+        <div class="sec" id="sec">
+            <h2>About Us</h2>
+            <p>Quillrosity Productions is a brand that wants to give free educational content to everyone. It is accessible and convenient for our viewers. 
+                We hope that you'll stick with us through our adventure of learning more about our world!</p>
+        </div>
+
+    <div class="container">
+            <div class="panel active" style="background-image: url('https://i.postimg.cc/bvmp7xZ4/2-20221121-110313-0001.png');">
+                <h3>Learn more about the world!</h3>
+            </div>
+
+            <div class="panel"
+            style="background-image: url('https://i.postimg.cc/9fmcg8QG/4-20221121-110313-0003.png');">
+            <h3>What are the expected contents?!</h3>
+        </div>
+
+        <div class="panel"
+            style="background-image: url('https://i.postimg.cc/QtPstjkb/3-20221121-110313-0002.png');">
+            <h3>Tales of History</h3>
+        </div>
+
+        <div class="panel"
+            style="background-image: url('https://i.postimg.cc/V65mmJMv/5-20221121-110313-0004.png');">
+            <h3>Mysteries filled with Conspiracies'</h3>
+        </div>
+
+        <div class="panel"
+            style="background-image: url('https://i.postimg.cc/6q2WL85g/1-20221121-110313-0000.png');">
+            <h3>Historical Architecture</h3>
+        </div>
+
+        <div class="panel"
+            style="background-image: url('https://i.postimg.cc/QCTDKvfr/6-20221121-110313-0005.png');">
+            <h3>And many more!</h3>
+        </div>
+
+        <script src="script.js"></script>
+        <script src="tilt.js"></script>
+        <script type="text/javascript">
+            VanillaTilt.init(document.querySelectorAll(".panel"), {
+                max: 25,
+                speed: 400,
+                glare: true,
+                "max-glare": 1,
+            });
+        </script>
+    </div>
+    <div class="bg">
+                <h4>Vision of Quillrosity</h4>
+        <div class="glass">
+
+            <div class="card">
+                <div class="content">
+                    <h2>01</h2>
+                    <h3>Free Education</h3>
+                    <p>Quillrosity envisions a world where education is free and not a privilege. We envision being able to provide more wisdom and knowledge to our audience through our content. All content will be accessible to the public. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="content">
+                    <h2>02</h2>
+                    <h3>Share of Knowledge</h3>
+                    <p>Quillrosity believes that sharing knowledge will continue to improve humanity; the more we learn, the more we progress. Quillrosity will follow, teaching the audience interesting topics that help them gain knowledge in different aspects. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="content">
+                    <h2>03</h2>
+                    <h3>Let’s Keep Thinking</h3>
+                    <p>Quillrosity’s concept of the world is full of ideas that are yet to be thought of. Being curious about everything around us will keep our minds active. The more we look at the world from a unique perspective, the more our knowledge expands. Let’s all keep thinking about our world!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script src="tilt.js"></script>
+        <script type="text/javascript">
+            VanillaTilt.init(document.querySelectorAll(".card"), {
+                max: 25,
+                speed: 400,
+                glare: true,
+                "max-glare": 1,
+            });
+        </script>
+    </div> 
+
+        <script>
+            let floor = document.getElementById('floor')
+            let feathers = document.getElementById('feathers')
+            let sparkles = document.getElementById('sparkles')
+            let text = document.getElementById('text')
+            let btn = document.getElementById('btn')
+            let books = document.getElementById('books')
+            let header = document.querySelector('header')
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                floor.style.top = value * 0.25 + 'px';
+                feathers.style.left = value * 0.25 + 'px';
+                feathers.style.marginTop = value * 0.15 + 'px';
+                sparkles.style.top = value * 0.25 + 'px';
+                books.style.top = value * 0.5 + 'px';
+                text.style.marginTop = value * 1.5 + 'px';
+                btn.style.marginTop = value * 3 + 'px';
+                header.style.top = value * 0 + 'px';
+            })
+        </script> 
+
+<div class="introductory">
+    <h2>We are Quillrosity</h2>
+</div>
+<div class="video">
+    <div class="main-video">
+        <video src="videos/Intro Video_MyVoice.mp4" controls muted autoplay></video>
+    </div>
+</div>
+<div class="FQ">
+        <h2 >Frequently Asked Questions</h2>
+    </div>
+
+        <div class="FAQ">
+        <div class="accordion">
+            <button type="button" class="accordion__button">How does Quillrosity help unprivileged children?</button>
+            <div class="accordion__content">
+                <p>As Quillrosity stands, we believe that everyone has a right to education. For our brand to take part in helping, we are happy to contribute. We will donate 5% of our shares to non-profit organizations that encourage education, like “Teach for the Philippines," “Save the Children,"  etc., to help the unprivileged learn wisdom. 
+                </p>
+            </div>
+
+            <button type="button" class="accordion__button">How can I help Quillrosity?</button>
+            <div class="accordion__content">
+                <p>Just by watching our content, you are already helping us. But by sharing knowledge, being curious, and spreading the word of “Quillrosity” helps our brand to share more wisdom with many. It will reach so many people just by watching and spreading our name.
+                </p>
+            </div>
+
+            <button type="button" class="accordion__button">What does Quillrosity offer?</button>
+            <div class="accordion__content">
+                <p>Quillrosity offers a variety of documentary and educational content to its audience. In order to provide wisdom and curiosity, we stream a variety of videos to suit its viewers' interests, ranging from historical to conspiracy-related. 
+                </p>
+            </div>
+
+            <button type="button" class="accordion__button">Where can I find Quillrosity?</button>
+            <div class="accordion__content">
+                <p>We are a brand that is Youtube-based, meaning that we’ll only share videos and shorts through the site, though we might try to expand to other platforms in the future. Though, currently, YouTube is the only place where you can find us.
+                </p>
+            </div>
+
+            <button type="button" class="accordion__button">How might I get in touch with you?</button>
+            <div class="accordion__content">
+                <p>You can send us an email at quillrosityproductions@gmail.com to get in contact with us. We will answer all your queries within 1-3 business days. We welcome any messages or questions regarding our brand and are willing to assist you at any time.
+                </p>
+            </div>
+        </div>
+
+        <script>
+        document.querySelectorAll('.accordion__button').forEach(button => {button.addEventListener('click',() => {
+            const accordionContent = button.nextElementSibling;
+
+            button.classList.toggle('accordion__button--active');
+
+            if(button.classList.contains('accordion__button--active')) {
+                accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+            } else {
+                accordionContent.style.maxHeight = 0;
+            }
+        });
+    });
+        </script>
+    </div>
+
+    <footer>
+        <div class="waves" id="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+
+        <ul class="social_icon">
+            <li><a href="https://www.youtube.com/channel/UCcZInNgZrg58wUCDu0bJPJA"><ion-icon name="logo-youtube"></ion-icon></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="#logo">Home</a></li>
+            <li><a href="#sec">About Us</a></li>
+            <li><a href="#waves">Contact</a></li>
+        </ul>
+        <p> ©2022 Quillrosity Productions | All Rights Reserved </p>
+        <p> @quillrosity | Email: quillrosityproductions@gmail.com</p>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </footer>
+    </body>
+</html>
